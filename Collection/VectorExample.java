@@ -1,4 +1,4 @@
-package Collections;
+package Collection;
 
 public class VectorExample {
 

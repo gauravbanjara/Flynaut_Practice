@@ -1,4 +1,4 @@
-package Collections.CollectionAssignment;
+package Collection.CollectionAssignment;
 import java.util.ArrayList;
 
 public class ArrayList1 {

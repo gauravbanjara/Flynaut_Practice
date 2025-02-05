@@ -1,4 +1,4 @@
-package Collections.CollectionAssignment;
+package Collection.CollectionAssignment;
 import java.util.LinkedList;
 
 public class LinkedListAssignment {

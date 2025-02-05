@@ -1,4 +1,4 @@
-package Collections;
+package Collection;
 import java.util.*;
 public class LinkedListExample {
     public static void main(String[] args) {

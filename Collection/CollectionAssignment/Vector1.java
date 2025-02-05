@@ -1,4 +1,4 @@
-package Collections.CollectionAssignment;
+package Collection.CollectionAssignment;
 import java.util.Vector;
 
 public class Vector1 {
