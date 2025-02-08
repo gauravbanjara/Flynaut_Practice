@@ -13,7 +13,7 @@ public class ArrayListExample {
         list.add("three");
         list.add("five");
         list.add(null); // null values are allowed
-        list.set(1,"gaurav");
+        list.set(1,"Gaurav");
         System.out.println(list);
 
 //       access the element using index
