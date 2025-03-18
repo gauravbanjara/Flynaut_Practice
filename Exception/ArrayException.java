@@ -5,10 +5,10 @@ public class ArrayException {
 
             int[] arr = {1,2,3};
             try {
-                System.out.println(arr[3]);
+                System.out.println(arr[5]);
             }
             catch (ArrayIndexOutOfBoundsException e){
-                System.out.println(e.getMessage());
+                System.out.println("Message : "+e.getMessage());
 //            System.out.println("Exception is handled");
             }
             System.out.println("Rest of the code is executed");
