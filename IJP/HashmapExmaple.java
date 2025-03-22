@@ -18,9 +18,10 @@ public class HashmapExmaple {
 
         System.out.println(sports.containsValue("Football"));
 
-        //        sports.remove(3);
+//        sports.remove(3);
 //        sports.remove(1,"Cricket");
 //        System.out.println(sports);
+
         System.out.println(sports);
         System.out.println(sports.get(2));
         System.out.println(sports.keySet());
@@ -35,18 +36,27 @@ public class HashmapExmaple {
         for (Integer key : sports.keySet()) {
             System.out.println("Key: " + key + ", Value: " + sports.get(key));
         }
-        // Traverse using for-each loop
-        for (Map.Entry<Integer, String> entry : sports.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+
+        // Traverse using Iterator
+        Iterator< Map.Entry<Integer, String> >iterator = sports.entrySet().iterator();
+        while (iterator.hasNext()){
+            Map.Entry<Integer,String> sport = iterator.next();
+            System.out.println("Keys : "+sport.getKey() +","+ " Values : "+sport.getValue());
+//            System.out.println(iterator.next()); // if we want to print directly
         }
 
-        Iterator<Map.Entry<Integer, String>> iterator = sports.entrySet().iterator();
-        while (iterator.hasNext()) {
-            Map.Entry<Integer, String> sport = iterator.next();
-            if (sport.getValue().startsWith("K")) {
-                iterator.remove();
-            }
-        }
-        System.out.println("Updated HashMap: " + sports);
+        // Traverse using for-each loop
+//        for (Map.Entry<Integer, String> entry : sports.entrySet()) {
+//            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+//        }
+
+//        Iterator<Map.Entry<Integer, String>> iterator = sports.entrySet().iterator();
+//        while (iterator.hasNext()) {
+//            Map.Entry<Integer, String> sport = iterator.next();
+//            if (sport.getValue().endsWith("n")) {
+//                iterator.remove();
+//            }
+//        }
+//        System.out.println("Updated HashMap: " + sports);
     }
 }
