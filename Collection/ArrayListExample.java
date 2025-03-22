@@ -16,7 +16,7 @@ public class ArrayListExample {
         list.set(1,"Gaurav");
         System.out.println(list);
 
-//       access the element using index
+//      access the element using index
         System.out.println(list.get(3));
     }
 }
