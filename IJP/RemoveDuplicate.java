@@ -14,8 +14,8 @@ public class RemoveDuplicate {
         return result.toString();
     }
     public static void main(String[] args) {
-        String str = "information";
-        System.out.println(str);
+        String str = "information hello good morning";
+        System.out.println("Original String : "+str);
         System.out.println(removeDiplicate(str));
     }
 }
