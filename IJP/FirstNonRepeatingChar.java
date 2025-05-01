@@ -4,7 +4,10 @@ import java.util.HashMap;
 
 public class FirstNonRepeatingChar {
     public static void main(String[] args) {
-        String str = "aahhaaggtbhau";
+//        String str = "chandrapalch";
+
+        String str = "ggaaurav";
+
 //        char [] arr = str.toCharArray();
 //        for (int i = 0; i <= arr.length-2 ; i++) {
 //            int count = 0;
@@ -21,7 +24,7 @@ public class FirstNonRepeatingChar {
 //        }
 
 
-        //  using Hashmap
+//          using Hashmap
         HashMap<Character, Integer> count = new HashMap<>();
 
         // Count the occurrences of each character
