@@ -1,7 +1,7 @@
 package Exception;
 
 public class NullPointerExample  {
-   public void Display(String str){
+   public static void Display(String str){
        try {
            System.out.println(str.length());
        }catch(NullPointerException e){
@@ -10,8 +10,7 @@ public class NullPointerExample  {
     }
     public static void main(String[] args) {
         String str = null;
-        NullPointerExample np = new NullPointerExample();
-        np.Display(str);
+        Display(str);
         System.out.println("Rest of the code is executed");
     }
 }
