@@ -14,12 +14,12 @@ public class BankAccountException {
             throw new ArithmeticException("Deposit more than 0 rs");
         }
     }
-    public void withdraw(double amount) throws ArithmeticException {
+    public void withdraw(double amount) throws InsufficientBalanceException {
         if (amount > 0 && amount <= balance) {
             balance = balance - amount;
             System.out.println("Withdrawn money: " + amount +" And new Balance is "+balance);
         } else if (amount > balance) {
-            throw new ArithmeticException("Insufficient funds.");
+            throw new InsufficientBalanceException("Insufficient funds.");
         } else {
             System.out.println("Negative amount can't be withdraw");
         }
@@ -39,6 +39,8 @@ public class BankAccountException {
             bank.withdraw(500);
         }catch (ArithmeticException e){
             System.err.println("Exception :" + e.getMessage());
+        } catch (InsufficientBalanceException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
