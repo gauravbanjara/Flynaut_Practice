@@ -1,6 +1,5 @@
 package IJP;
 
-import java.util.Collections;
 import java.util.HashSet;
 
 public class HashSetExample {

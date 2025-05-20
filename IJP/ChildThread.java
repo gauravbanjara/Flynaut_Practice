@@ -1,6 +1,5 @@
 package IJP;
 
-
 // Creating Thread by extending Thread class
 public class ChildThread extends Thread{
     @Override

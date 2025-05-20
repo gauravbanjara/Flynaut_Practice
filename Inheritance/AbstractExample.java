@@ -1,6 +1,6 @@
 package Inheritance;
 
 public abstract class AbstractExample {
-     void start(){};
-     void stop(){};
+     void start(){}
+     void stop(){}
 }

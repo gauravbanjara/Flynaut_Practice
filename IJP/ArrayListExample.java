@@ -22,20 +22,9 @@ public class ArrayListExample {
 
         System.out.println(countries);
         Collections.sort(countries); // Sort in Ascending Order
-//        Iterator<String> iterator = countries.iterator();
-//        while (iterator.hasNext()){
-//            String name = iterator.next();
-//            System.out.println(name);
-//        }
         System.out.println("--------------------------------------");
         Collections.sort(countries, Collections.reverseOrder()); // Sort in Descending order
-//        Iterator<String> iterator1 = countries.iterator();
-//        while (iterator1.hasNext()){
-//            String name = iterator1.next();
-//            System.out.println(name);
-////            System.out.println(iterator.next());  // if we want to print directly
-//        }
-//
+
         Iterator<String> iterator = countries.iterator();
         while (iterator.hasNext()){
             String name = iterator.next();
@@ -44,15 +33,14 @@ public class ArrayListExample {
             }
         }
 
-//
-//        System.out.println("--------------------------------------");
-//        Iterator<String> iterator2 = countries.iterator();
-//        while (iterator2.hasNext()){
-//            String name = iterator2.next();
-//            System.out.println(name);
-////            System.out.println(iterator.next());  // if we want to print directly
-//        }
 
+        Iterator<String> iterator1 = countries.iterator();
+        while (iterator1.hasNext()){
+            String country = iterator1.next();
+            if(country.endsWith("n")){
+                iterator1.remove();
+            }
+        }
         System.out.println(countries);
     }
 }

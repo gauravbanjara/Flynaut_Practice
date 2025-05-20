@@ -6,7 +6,7 @@ import java.util.List;
 public class ListExample {
     public static void main(String[] args) {
 //        list interface is ordered collection of element
-//        list interface can null and duplicate values
+//        list interface can have null and duplicate values
 //        List interface maintain the insertion order
 //        ArrayList, LinkedList, Vector, Stack are the implementing class of list interface
 

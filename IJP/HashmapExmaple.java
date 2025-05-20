@@ -50,13 +50,13 @@ public class HashmapExmaple {
 //            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
 //        }
 
-//        Iterator<Map.Entry<Integer, String>> iterator = sports.entrySet().iterator();
-//        while (iterator.hasNext()) {
-//            Map.Entry<Integer, String> sport = iterator.next();
-//            if (sport.getValue().endsWith("n")) {
-//                iterator.remove();
-//            }
-//        }
-//        System.out.println("Updated HashMap: " + sports);
+        Iterator<Map.Entry<Integer, String>> iterator1 = sports.entrySet().iterator();
+        while (iterator1.hasNext()) {
+            Map.Entry<Integer, String> sport = iterator1.next();
+            if (sport.getValue().endsWith("n")) {
+                iterator1.remove();
+            }
+        }
+        System.out.println("Updated HashMap: " + sports);
     }
 }
