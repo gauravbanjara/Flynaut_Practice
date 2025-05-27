@@ -3,16 +3,16 @@ package IJP;
 public class NumberPallindromeOrNot {
     public static void main(String...args){
         int n = 12321;
-        int sum = 0;
+        int result = 0;
         int num = n;
         while (num > 0){
             int a = num % 10;
-            sum = sum * 10 + a;
+            result = result * 10 + a;
             num = num / 10;
         }
-        System.out.println(sum);
+//        System.out.println(result);
 
-        if(n == sum)
+        if(n == result)
             System.out.println("pallindrome");
         else
             System.out.println("No pallindrome");

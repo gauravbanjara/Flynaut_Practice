@@ -16,7 +16,7 @@ public class DeadLoackExample {
              synchronized (lock1){
                  System.out.println("Thread 1 : Holds lock 1");
                  try {
-                     myThread1.sleep(500);
+                     myThread1.sleep(1000);
                  } catch (InterruptedException e) {
                  }
                  System.out.println("Thread 1 : waiting for lock 2");

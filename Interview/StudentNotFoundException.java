@@ -1,8 +1,7 @@
-package Exception;
+package Interview;
 
-public class StudentNotFoundException extends Exception{
+public class StudentNotFoundException extends RuntimeException {
     public StudentNotFoundException(String message){
         super(message);
     }
-
 }

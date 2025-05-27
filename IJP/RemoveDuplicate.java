@@ -18,7 +18,7 @@ public class RemoveDuplicate {
     // without using collections
     private static String removeDiplicateWithoutCF(String str) {
         StringBuilder result = new StringBuilder();
-        boolean[] seen = new boolean[256];
+        boolean[] seen = new boolean[128];
         for (char ch : str.toCharArray()){
             if (!seen[ch]){
                 seen[ch] = true;

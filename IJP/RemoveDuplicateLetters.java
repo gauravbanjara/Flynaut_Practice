@@ -9,26 +9,28 @@ public class RemoveDuplicateLetters {
         String str = "hello hii good morning nice how are you";
         StringBuilder result = new StringBuilder();
         // Boolean array to track seen characters (assuming ASCII characters)
-        boolean[] arr = new boolean[256];
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-            if (!arr[ch]) {
-                result.append(ch);
-                arr[ch] = true;
-           }
-        }
-        System.out.println(result);
-
-        // using collections
-//        LinkedHashSet<Character> chars = new LinkedHashSet<>();
+//        boolean[] arr = new boolean[256];
 //        for (int i = 0; i < str.length(); i++) {
-//            chars.add(str.charAt(i));
-//        }
-//        StringBuilder result = new StringBuilder();
-//        for (char ch : chars){
-//            result.append(ch);
+//            char ch = str.charAt(i);
+//            if (!arr[ch]) {
+//                result.append(ch);
+//                arr[ch] = true;
+//           }
 //        }
 //        System.out.println(result);
+
+        // using collections
+        LinkedHashSet<Character> chars = new LinkedHashSet<>();
+        for (int i = 0; i < str.length(); i++) {
+            chars.add(str.charAt(i));
+        }
+//        System.out.println(chars); // it will print characters in set format.
+
+//         this will convert Set in String.
+        for (char ch : chars){
+            result.append(ch);
+        }
+        System.out.println(result);
     }
 }
 

@@ -1,6 +1,9 @@
 package IJP;
 
 public class DeadlockExample {
+    public static Object object1 = new Object();
+    public static Object object2 = new Object();
+
     private static class Mythread1 extends Thread {
         @Override
         public void run() {
@@ -31,9 +34,6 @@ public class DeadlockExample {
             }
         }
     }
-
-    public static Object object1 = new Object();
-    public static Object object2 = new Object();
 
     public static void main(String[] args) {
         Mythread1 mythread1 = new Mythread1();

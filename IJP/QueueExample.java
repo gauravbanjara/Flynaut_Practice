@@ -11,6 +11,7 @@ public class QueueExample {
         queue.add("C");
         queue.offer("D");
 
+        System.out.println(queue);
         System.out.println(queue.poll());  // deletes element and return
         System.out.println(queue.peek());
     }

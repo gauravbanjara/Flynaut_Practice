@@ -8,7 +8,6 @@ public class ArrayException {
             }
             catch (ArrayIndexOutOfBoundsException e){
                 System.out.println("Message : "+e.getMessage());
-//            System.out.println("Exception is handled");
             }
             System.out.println("Rest of the code is executed");
         }

@@ -3,7 +3,7 @@ package IJP;
 import java.util.HashMap;
 
 public class FirstNonRepeatingChar {
-    private static void firstNonRepeatingCharWithoutCF(String str) {
+    public static void firstNonRepeatingCharWithoutCF(String str) {
         char [] arr = str.toCharArray();
         for (int i = 0; i <= arr.length-2 ; i++) {
             int count = 0;

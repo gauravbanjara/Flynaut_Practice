@@ -1,6 +1,6 @@
 package IJP;
 
-// This is to create unchecked exception
+// This is to create unchecked exception,
 public class CustomExceptionClass extends RuntimeException{
     public CustomExceptionClass(String message) {
         super(message);

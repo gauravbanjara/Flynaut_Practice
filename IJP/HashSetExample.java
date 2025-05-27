@@ -10,6 +10,7 @@ public class HashSetExample {
         count.add(65);
         count.add(58);
         count.add(30);
+        count.add(78);
 
         System.out.println(count);
     }
