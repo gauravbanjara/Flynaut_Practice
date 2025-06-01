@@ -13,7 +13,6 @@ public class OddEven {
         numbers.add(60);
         ArrayList<Integer> odds = new ArrayList<>();
         ArrayList<Integer> even = new ArrayList<>();
-
         for (Integer nums : numbers){
             if (nums % 2 == 0){
                 even.add(nums);
