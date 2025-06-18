@@ -1,11 +1,11 @@
 package Interview;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class CountChar{
     private static void countChar(String str) {
-        HashMap<Character, Integer> count  = new HashMap<>();
+        Map<Character,Integer> count  = new LinkedHashMap<>();
         for (int i = 0; i < str.length()-1; i++) {
             char ch = str.charAt(i);
             if (count.containsKey(ch)){

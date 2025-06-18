@@ -22,5 +22,6 @@ public class OddEven {
         }
         System.out.println("Even element : "+even);
         System.out.println("Odd element : "+odds);
+        System.out.println("Sum of odd and even :" );
     }
 }
