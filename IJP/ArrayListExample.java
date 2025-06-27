@@ -33,7 +33,6 @@ public class ArrayListExample {
             }
         }
 
-
         Iterator<String> iterator1 = countries.iterator();
         while (iterator1.hasNext()){
             String country = iterator1.next();
