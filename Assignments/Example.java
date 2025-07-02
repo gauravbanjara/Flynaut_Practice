@@ -11,10 +11,10 @@ class  Example extends  Thread {
             }
         }
     }
-        public static void main(String[] args) {
-            Example e1 = new Example();
-            Example e2  = new Example();
-            e1.start();
-            e2.start();
-        }
+    public static void main(String[] args) {
+        Example e1 = new Example();
+        Example e2  = new Example();
+        e1.start();
+        e2.start();
+    }
 }
