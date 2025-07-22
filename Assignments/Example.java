@@ -1,4 +1,4 @@
-class  Example extends  Thread {
+class Example extends  Thread {
     @Override
     public void run() {
         for (int i = 0; i < 5; i++) {
@@ -16,5 +16,6 @@ class  Example extends  Thread {
         Example e2  = new Example();
         e1.start();
         e2.start();
+//        e1.currentThread();
     }
 }
