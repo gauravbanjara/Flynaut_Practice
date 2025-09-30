@@ -16,13 +16,13 @@ public class CountCharInString {
                 count.put(ch,1);
             }
         }
-        for (Map.Entry<Character, Integer> entry : count.entrySet())
-             if(entry.getValue() > 1){
-                 System.out.println(entry);
-             }
+//        for (Map.Entry<Character, Integer> entry : count.entrySet())
+//             if(entry.getValue() > 1){
+//                 System.out.println(entry);
+//             }
 
         Iterator<Map.Entry<Character,Integer>> iterator = count.entrySet().iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
     }
